@@ -9,6 +9,6 @@ cursor = conn.cursor()
 cursor.execute('select * from films')
 rows = cursor.fetchall()
 for row in rows:
-  print("{:30s} {:4s} {:30s}".format(row['name'], row['year'], row['director']))
+  print("{:30s} {:4s} {:30s}".format(row['title'], row['year'], row['director']))
 
 conn.close()
