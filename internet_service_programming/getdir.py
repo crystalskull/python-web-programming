@@ -2,8 +2,8 @@
 
 import ftplib
 
-conn = ftplib.FTP("localhost")
-conn.login("username","password") #enter appropriate username and password
+conn = ftplib.FTP("<ftp server url>") # use appropriate ftp server url
+conn.login("<username>","<password>") #use appropriate username and password
 data = []
 conn.dir(data.append)
 conn.quit()
