@@ -8,3 +8,5 @@ print('Group', name, 'has', count, 'articles, range', first, 'to', last)
 resp, subs = server.xhdr('subject',str(first) + '-' + str(last))
 for id, text in subs[-10:]:
   print(id,text)
+
+server.quit()
